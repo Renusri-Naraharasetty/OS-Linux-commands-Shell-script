@@ -42,55 +42,34 @@ s.n. dasgupta
 # DISPLAY THE CONTENT OF THE FILES
 cat < file1
 ## OUTPUT:
-```
-chanchal singhvi                                                                                                              
-c.k.shukla                                                                                                                    
-s.n. dasgupta                                                                                                                 
-sumit chakrobarty
-```
+![image](https://github.com/user-attachments/assets/2d77b858-ea47-4b60-8f8f-646564ce8888)
+
 
 cat < file2
 ## OUTPUT:
-```
-anil aggarwal                                                                                                                 
-barun sengupta                                                                                                                
-c.k.shukla                                                                                                                    
-lalit chowdury                                                                                                                
-s.n. dasgupta 
-```
+![image](https://github.com/user-attachments/assets/849d1ce5-b38b-469b-8786-6ca55db873db)
+
+
 
 # COMPARING FILES
 cmp file1 file2
 ## OUTPUT:
-```
-file1 file2 differ: byte 1, line 1 
-```
+![image](https://github.com/user-attachments/assets/ae108a8b-f484-4aa4-83c5-9287fd8a4cb3)
+
+
  
 comm file1 file2
 ## OUTPUT:
-```
-        anil aggarwal                                                                                                         
-        barun sengupta                                                                                                        
-chanchal singhvi                                                                                                              
-                c.k.shukla                                                                                                    
-        lalit chowdury                                                                                                        
-                s.n. dasgupta                                                                                                 
-sumit chakrobarty 
-```
+![image](https://github.com/user-attachments/assets/e9266811-4c8a-42d1-a0a8-1404f78d862e)
+
+
 
 diff file1 file2
 ## OUTPUT:
-```
-1c1,2                                                                                                                         
-< chanchal singhvi                                                                                                            
----                                                                                                                           
-> anil aggarwal                                                                                                               
-> barun sengupta                                                                                                              
-2a4                                                                                                                           
-> lalit chowdury                                                                                                              
-4d5                                                                                                                           
-< sumit chakrobarty 
-```
+![image](https://github.com/user-attachments/assets/a024cfbb-09e0-4f71-862f-475cc6983dd1)
+
+
+
 
 # Filters
 
@@ -113,18 +92,19 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT:
-```
-hel                                                                                                                           
-thi 
-```
+![image](https://github.com/user-attachments/assets/5f78084e-4216-4d2f-9eaa-f9db2046d8e4)
+
 
 cut -d "|" -f 1 file22
 ## OUTPUT:
-
+![image](https://github.com/user-attachments/assets/f9d7323d-42f3-4011-bae5-94b8a11e710a)
 
 
 cut -d "|" -f 2 file22
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/bc13df8d-b9ba-4db3-88b2-3287b4725eac)
+
+
 
 
 cat < newfile 
@@ -138,40 +118,39 @@ Hello world
 hello world
  
 grep Hello newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/f84c4a43-d0fd-4585-b39c-11ac6b174d53)
 
 
 
 grep hello newfile 
-## OUTPUT
-
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/53294344-b7be-4af0-8c3e-a81e44e77a1a)
 
 
 
 grep -v hello newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/15ac7b4e-45c4-4bce-a3c9-1d35c06d515f)
 
 
 
 cat newfile | grep -i "hello"
-## OUTPUT
-
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/cfbbac96-bc09-4829-a97b-d5fc496bc308)
 
 
 
 cat newfile | grep -i -c "hello"
-## OUTPUT
-
-
-
-
-grep -R ubuntu /etc
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/f01cfb88-3378-4ead-8812-7ab81c312acc)
 
 
 
 grep -w -n world newfile   
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/2e2acd1c-b43d-4b65-8e8c-23dc0738fde0)
+
 
 
 cat < newfile 
@@ -194,60 +173,68 @@ Linux is best in this World
 ^d
  ```
 egrep -w 'Hello|hello' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/7b36b866-bbbc-47e9-bab4-35cb9f42d3e4)
 
 
 
 egrep -w '(H|h)ello' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/fcdd9f2f-b703-4960-98c3-bff3b1363caa)
+
 
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
-## OUTPUT
-
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/917db146-55e7-472c-ad00-f874e7ca1198)
 
 
 
 egrep '(^hello)' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/649f1eeb-d0f5-49a0-ac27-c9ec3aa9f5c6)
+
 
 
 
 egrep '(world$)' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/2fde1e8e-d540-48c6-bcf4-9d3c91ce77b3)
 
-
-
-egrep '(World$)' newfile 
-## OUTPUT
 
 
 egrep '((W|w)orld$)' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/9f601fd4-5f6e-4eb9-9e2b-ff911b855b19)
+
 
 
 
 egrep '[1-9]' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/eb598123-db9f-481e-8b61-cdbd610fc867)
+
 
 
 
 egrep 'Linux.*world' newfile 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/140ba11d-221f-45a2-8dbb-96163a4cbc99)
 
-
-egrep 'Linux.*World' newfile 
-## OUTPUT
 
 
 egrep l{2} newfile
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/ba2dc1b7-c4f2-471b-a2d1-aa5e546601c9)
+
 
 
 
 egrep 's{1,2}' newfile
-## OUTPUT 
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/8cc12b1c-eac4-41db-a550-d998d93d3a94)
+
 
 
 cat > file23
