@@ -252,80 +252,113 @@ cat > file23
 
 
 sed -n -e '3p' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/b70ae39e-4bce-40c0-b2b2-2d4a3fb8c55e)
+
 
 
 
 sed -n -e '$p' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/657644d8-cb76-4895-a683-ebb491ceb36e)
+
 
 
 
 sed  -e 's/Ram/Sita/' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/9ae34194-a842-48cd-89c3-1750ef5f3dae)
+
 
 
 
 sed  -e '2s/Ram/Sita/' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/326de367-c79b-45f7-a362-b073a88ce9cf)
+
 
 
 
 sed  '/tom/s/5000/6000/' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/2ed2d541-06c6-4f36-b9e7-dcf84df9b279)
+
 
 
 
 sed -n -e '1,5p' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/6c636d02-6bb6-444b-84ba-f1d6f5a3e2cd)
+
 
 
 
 sed -n -e '2,/Joe/p' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/c0ae829b-84b8-4c38-9aba-27ea1064c899)
+
 
 
 
 
 sed -n -e '/tom/,/Joe/p' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/98344db6-9a50-492a-89fd-b765f1ac7b24)
+
 
 
 
 seq 10 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/c3faed05-e1e6-4628-8fea-744c897fa8d1)
+
 
 
 
 seq 10 | sed -n '4,6p'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/8276a805-128c-424d-beaa-acc5bcf49496)
+
 
 
 
 seq 10 | sed -n '2,~4p'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/96cd7fcd-aff2-4c5c-99a0-823108ffdd6a)
+
 
 
 
 seq 3 | sed '2a hello'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/5221e573-1ad7-430c-b79a-ed8547ac58ca)
+
 
 
 
 seq 2 | sed '2i hello'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/aa7e56e8-6d3b-4035-817a-3fb23cd3922e)
+
 
 
 seq 10 | sed '2,9c hello'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/cdfd8069-a08c-443b-943c-96123fba7203)
+
 
 
 sed -n '2,4{s/^/$/;p}' file23
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/64326568-1f59-426d-aa7d-63058ad0eded)
+
 
 
 
 sed -n '2,4{s/$/*/;p}' file23
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/42088774-fc42-4a79-bf45-eb5a96813383)
+
 
 
 #Sorting File content
@@ -338,7 +371,9 @@ cat > file21
 1004 | Sit |  7000 | Dev
 ``` 
 sort file21
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/9e6f7695-4d62-4057-9139-2f22a42224ed)
+
 
 
 cat > file22
@@ -351,7 +386,9 @@ cat > file22
 1004 | Sit |  7000 | Dev
 ``` 
 uniq file22
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/aa44ea24-7ce5-4051-82fd-c7eb40790138)
+
 
 
 
