@@ -39,29 +39,60 @@ lalit chowdury
 s.n. dasgupta
 ^d
 ```
-### Display the content of the files
+# DISPLAY THE CONTENT OF THE FILES
 cat < file1
-## OUTPUT
-
-
+## OUTPUT:
+```
+chanchal singhvi                                                                                                              
+c.k.shukla                                                                                                                    
+s.n. dasgupta                                                                                                                 
+sumit chakrobarty
+```
 
 cat < file2
-## OUTPUT
+## OUTPUT:
+```
+anil aggarwal                                                                                                                 
+barun sengupta                                                                                                                
+c.k.shukla                                                                                                                    
+lalit chowdury                                                                                                                
+s.n. dasgupta 
+```
 
-
-# Comparing Files
+# COMPARING FILES
 cmp file1 file2
-## OUTPUT
+## OUTPUT:
+```
+file1 file2 differ: byte 1, line 1 
+```
  
 comm file1 file2
- ## OUTPUT
+## OUTPUT:
+```
+        anil aggarwal                                                                                                         
+        barun sengupta                                                                                                        
+chanchal singhvi                                                                                                              
+                c.k.shukla                                                                                                    
+        lalit chowdury                                                                                                        
+                s.n. dasgupta                                                                                                 
+sumit chakrobarty 
+```
 
- 
 diff file1 file2
-## OUTPUT
+## OUTPUT:
+```
+1c1,2                                                                                                                         
+< chanchal singhvi                                                                                                            
+---                                                                                                                           
+> anil aggarwal                                                                                                               
+> barun sengupta                                                                                                              
+2a4                                                                                                                           
+> lalit chowdury                                                                                                              
+4d5                                                                                                                           
+< sumit chakrobarty 
+```
 
-
-#Filters
+# Filters
 
 ### Create the following files file11, file22 as follows:
 
@@ -81,13 +112,14 @@ cat > file22
 
 
 cut -c1-3 file11
-## OUTPUT
-
-
-
+## OUTPUT:
+```
+hel                                                                                                                           
+thi 
+```
 
 cut -d "|" -f 1 file22
-## OUTPUT
+## OUTPUT:
 
 
 
