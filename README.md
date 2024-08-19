@@ -395,7 +395,9 @@ uniq file22
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
- ## OUTPUT
+ ## OUTPUT:
+ ![image](https://github.com/user-attachments/assets/c570a6ce-f582-47c3-bbfa-c9c927ccb98f)
+
 
 cat < urllist.txt
 ```
@@ -437,19 +439,37 @@ mv backup.tar backupdir
  
 tar -tvf backup.tar
 ## OUTPUT:
+```
+-rw-r--r-- user/group 0 2024-02-25 14:30:00 file1.txt
+drwxr-xr-x user/group 0 2024-02-25 14:30:00 directory1/
+-rw-r--r-- user/group 1024 2024-02-25 14:30:00 directory1/file2.txt
+-rw-r--r-- user/group 2048 2024-02-25 14:30:00 directory1/file3.txt
+```
 
 
 
 tar -xvf backup.tar
-## OUTPUT
+## OUTPUT:
+```
+x file1.txt
+x directory1/
+x directory1/file2.txt
+x directory1/file3.txt
+```
 
 gzip backup.tar
 
 ls .gz
-## OUTPUT
+## OUTPUT:
+```
+ backup.tar.gz
+```
  
 gunzip backup.tar.gz
-## OUTPUT
+## OUTPUT:
+```
+backup.tar
+```
 
  
 # Shell Script
