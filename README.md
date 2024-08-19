@@ -411,18 +411,24 @@ www. google. com
 www. mrcet.... com
  ```
 cat urllist.txt | tr -d ' '
- ## OUTPUT
+ ## OUTPUT:
+ ![image](https://github.com/user-attachments/assets/842c6567-761c-46fa-b675-17c70fee34a8)
+
 
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/8ef2e235-d5c5-41dc-9078-f5d9fd7d7090)
+
 
 
 
 #Backup commands
 tar -cvf backup.tar *
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/96631275-784e-4779-8f47-fe04825640c0)
+
 
 
 mkdir backupdir
@@ -430,7 +436,8 @@ mkdir backupdir
 mv backup.tar backupdir
  
 tar -tvf backup.tar
-## OUTPUT
+## OUTPUT:
+
 
 
 tar -xvf backup.tar
