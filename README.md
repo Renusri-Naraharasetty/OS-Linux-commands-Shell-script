@@ -479,7 +479,9 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
 ./my-script.sh
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/90198888-be6e-4326-9f75-f157ba4120cb)
+
 
  
 cat << stop > herecheck.txt
