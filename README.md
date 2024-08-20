@@ -493,7 +493,9 @@ stop
 ```
 
 cat herecheck.txt
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/f723a2ba-373e-4709-a259-b19bfc27bccb)
+
 
 
 cat < scriptest.sh 
