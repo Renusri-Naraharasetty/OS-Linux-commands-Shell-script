@@ -559,7 +559,8 @@ abcd
  
 echo $?
  ## OUTPUT:
- ![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/89407d7e-7c8f-4f8f-8305-7ac74cc53db8)
+
 
 
 
