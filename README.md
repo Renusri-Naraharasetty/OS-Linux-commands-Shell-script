@@ -533,24 +533,34 @@ chmod 777 scriptest.sh
  
 ./scriptest.sh 1 2 3
 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/6c5ae25d-4c84-4f80-abfa-79188d72b443)
+
 
  
 ls file1
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/da5f5d65-7e88-4576-8fef-5c0ec63a7510)
+
 
 echo $?
-## OUTPUT 
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/8b510106-5b6f-4f28-860c-297399a64687)
+
 ./one
 bash: ./one: Permission denied
  
 echo $?
-## OUTPUT 
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/24e89db2-26ef-4d82-891e-231740661a42)
+
  
 abcd
  
 echo $?
- ## OUTPUT
+ ## OUTPUT:
+ ![Uploading image.png…]()
+
 
 
  
