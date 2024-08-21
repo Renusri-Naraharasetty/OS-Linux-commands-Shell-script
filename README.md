@@ -593,14 +593,20 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
+##OUTPUT:
+![image](https://github.com/user-attachments/assets/ec686912-cc13-482e-85ea-77f10e441f97)
+
 
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
-## OUTPUT
+## OUTPUT:
+```
+baseball is less than hockey
+```
+
 
 
 # check file ownership
@@ -627,7 +633,10 @@ echo “Sorry, you are not the owner of the /etc/passwd file”
 fi
  ```
 ./psswdperm.sh
-## OUTPUT
+## OUTPUT:
+```
+You are the owner of the /etc/passwd file
+```
 
 # check if with file location
 cat>ifnested.sh 
@@ -673,7 +682,9 @@ fi
 ```
 
 ./ifnested.sh 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/67857b89-e2b1-4744-acef-e8437144b240)
+
 
 
 
@@ -717,7 +728,9 @@ fi
 $ chmod 755 iftest.sh
  
 $ ./iftest.sh 
-##OUTPUT
+##OUTPUT:
+![image](https://github.com/user-attachments/assets/3d5c0825-2cb4-4352-b10b-f9325b7915d5)
+
 
 # check if a file
 cat > ifnested.sh 
@@ -766,7 +779,9 @@ fi
 $ chmod 755 ifnested.sh
  
 $ ./ifnested.sh 
-##OUTPUT
+##OUTPUT:
+![image](https://github.com/user-attachments/assets/75709880-c1d7-4560-bc44-314edf918e6d)
+
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -794,7 +809,16 @@ fi
 $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
-## OUTPUT
+## OUTPUT:
+```
+Welcome Ram
+Please enjoy your visit
+Welcome Rahim
+Please enjoy your visit
+Special testing account
+gganesh, Do not forget to logout when you're done
+Sorry, you are not allowed here
+```
 
 
 # testing compound comparisons
@@ -810,7 +834,9 @@ fi
 ```
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
-## OUTPUT
+## OUTPUT:
+![image](https://github.com/user-attachments/assets/c5b6b953-d5bc-4b6b-9b6f-b5eb46ebab2f)
+
 
 # using the case command
 cat >casecheck.sh 
@@ -830,7 +856,15 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT:
+```
+Welcome Ram/Rahim
+Please enjoy your visit
+Special testing account
+gganesh, Do not forget to logout when you're done
+Sorry, you are not allowed here
+```
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -845,7 +879,19 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+# OUTPUT:
+```
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+```
  
 cat untiltest.sh 
 ```bash
@@ -858,7 +904,13 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+# OUTPUT:
+```
+100
+75
+50
+25
+```
  
  
 cat forin1.sh 
@@ -884,7 +936,16 @@ echo “word:$test”
 done
  ```
  
-$ chmod 755 forin2.sh
+$ chmod 755 forin2.sh $ ./forin.sh
+# OUTPUT:
+```
+The next state is Alabama
+The next state is Alaska
+The next state is Arizona
+The next state is Arkansas
+The next state is California
+The next state is Colorado
+```
  
 cat forin2.sh 
 ```bash
@@ -909,7 +970,13 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
+# OUTPUT: 
+```
+word:I
+word:dont know if thisll
+word:work
+```
+
 cat forin1.sh 
 ```bash
 #!/bin/bash
@@ -919,9 +986,16 @@ do
 echo The next state is $test
 done
 ```
-$ chmod 755 forin1.sh
-
-## OUTPUT
+$ ./forin3.sh
+## OUTPUT:
+```
+word:I
+word:don't
+word:know
+word:if
+word:this'll
+word:work
+```
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -942,8 +1016,16 @@ Adilabad
 Bhadrachalam
 Khammam
 
-## OUTPUT
-
+## OUTPUT:
+```
+Visit beautiful Hyderabad
+Visit beautiful Alampur
+Visit beautiful Basara
+Visit beautiful Warangal
+Visit beautiful Adilabad
+Visit beautiful Bhadrachalam
+Visit beautiful Khammam
+```
 
 cat forctype.sh 
 ```bash
@@ -956,7 +1038,14 @@ done
 ````
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
-## OUTPUT
+## OUTPUT:
+```
+The value of i is 1
+The value of i is 2
+The value of i is 3
+The value of i is 4
+The value of i is 5
+```
 
 cat forctype1.sh 
 ```bash
@@ -969,7 +1058,19 @@ done
 ```
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
-## OUTPUT
+## OUTPUT:
+```
+#!/bin/bash
+# nesting for loops
+for (( a = 1; a <= 3; a++ ))
+do
+echo "Starting loop $a:"
+for (( b = 1; b <= 3; b++ ))
+do
+echo " Inside loop: $b"
+done
+done
+```
 
 cat fornested1.sh 
 ```bash
@@ -987,8 +1088,14 @@ done
 $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
- ## OUTPUT
-
+ ## OUTPUT:
+ ```
+1 - 5
+2 - 4
+3 - 3
+4 - 2
+5 - 1
+```
  
 cat forbreak.sh 
 ```bash
@@ -1004,11 +1111,15 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
+## OUTPUT:
+```
+Iteration number: 1
+Iteration number: 2
+The for loop is completed
+```
  
 cat forbreak.sh 
 ```bash
@@ -1029,7 +1140,14 @@ echo "The for loop is completed“
 $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
-## OUTPUT
+## OUTPUT:
+```
+Iteration number: 1
+Iteration number: 2
+Iteration number: 4
+Iteration number: 5
+The for loop is completed
+```
  
 cat exread.sh 
 ```bash
@@ -1043,7 +1161,11 @@ echo "Hello $name, welcome to my program. "
 $ chmod 755 exread.sh 
  
 $ ./exread.sh 
-## OUTPUT
+## OUTPUT:
+```
+Enter your name: John
+Hello John, welcome to my program.
+```
 
 
  cat exread1.sh
@@ -1055,7 +1177,11 @@ echo "Hello $name, welcome to my program. “
 ``` 
 $ chmod 755 exread1.sh 
 
-## OUTPUT
+## OUTPUT:
+```
+Enter your name: sanju
+Hello sanju, welcome to my program.
+```
 
 
 
@@ -1081,7 +1207,11 @@ fi
 
  
  ./funcex.sh 1 2
-
+## OUTPUT:
+```
+$ bash script.sh 1 2
+The result is 2
+```
  
 cat argshift.sh
 ```bash
@@ -1093,7 +1223,12 @@ done
 ```
 $ chmod 777 argshift.sh
 
-## OUTPUT
+## OUTPUT:
+```
+1
+2
+3
+```
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
@@ -1110,7 +1245,12 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
+## OUTPUT:
+```
+1
+2
+3
+```
 $ ./argshift.sh 1 2 3
  
 cat argshift.sh
@@ -1123,9 +1263,11 @@ while (( "$#" )); do
 done
 set +x
 ```
-## OUTPUT
- ./argshift.sh 1 2 3
- 
+## OUTPUT:
+```
++ (( 0 ))
++ set +x
+````
  
 cat > nc.awk
 ```bash
@@ -1155,7 +1297,12 @@ bcdfghj
 ubcdfghj
 ```
 awk -f nc.awk data.dat
-## OUTPUT 
+## OUTPUT:
+```
+total characters 75
+Number of Lines are 10
+No of Words count: 10
+```
  
 cat > palindrome.sh
 ```bash
@@ -1182,7 +1329,15 @@ else
 	echo "Number is NOT palindrome"
 fi
 ```
-## OUTPUT 
+## OUTPUT:
+```
+Enter the number
+121
+Number is palindrome
+Enter the number
+69
+Number is NOT palindrome
+```
 
 
 # RESULT:
